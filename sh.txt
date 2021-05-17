@@ -1,0 +1,29 @@
+$ ps aux | convert label:@- process.png
+ㅤ→ 쉘 아웃풋을 이미지로
+
+$ curl ipinfo.io
+ㅤ→ 외부 IP주소
+
+$ git log --format='%aN' | sort -u
+ㅤ→ 컨트리뷰터 보기
+
+$ history | awk '{print $2}' | sort | uniq -c | sort -rn | head.
+ㅤ→ 가장 자주 쓰는 명령들 보고, alias로 추가 가능
+
+$ ls -d */
+ㅤ→ 디렉토리만 보기
+
+$ du -hs */ | sort -hr | head
+ㅤ→ 현재 폴더 하위에서 가장 큰 폴더 10개 보기
+
+$ ss -p
+ㅤ→ 네트웍 사용중인 앱들 리스트 보기
+
+$ rm -f !(test.txt).
+ㅤ→ 특정 파일 제외하고 나머지 다 지우기
+
+$ python3 -m http.server
+ㅤ→ 현재 폴더에서 웹서버 실행
+
+$ mkfifo hello; script -f hello
+ㅤ→ 터미널 세션 실시간 공유
